@@ -1,0 +1,10 @@
+Auth: Kiet Ho
+Please to set up some params before start docker-compose
+sysctl -w vm.max_map_count = 262144
+sysctl -w fs.file-max = 65536
+ulimit -n 65536
+ulimit -u 4096
+
+Open port 9000/tcp
+tường lửa sudo-cmd --permosystem --zone = public --add-port = 9000 / tcp
+tường lửa sudo-cmd - tải xuống
